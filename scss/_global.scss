@@ -1,0 +1,46 @@
+// Start Variables
+:root {
+    --bg-color: #ebebeb;
+    --fg-color: #ffffff;
+    --p_text-color: #0e0e0e;
+    --s_text-color: rgba(15, 15, 15, .7);
+    --bor-color: rgba(#0e0e0e, .3);
+    --acc-color: #7900db;
+    --but-color: #2e2e2e;
+}
+
+.d_theme {
+    --bg-color: #0e0e0e;
+    --fg-color: #1b1b1b;
+    --p_text-color: #fcfcfc;
+    --s_text-color: rgba(255, 255, 255, .6);
+    --bor-color: rgba(#ffffff, .3);
+    --acc-color: #ae4bff;
+    --but-color: #1e78ff;
+}
+// End Variables
+
+
+
+// Start Reusable
+@mixin transition {
+    transition: all .5s ease-in-out;
+}
+// End Reusable
+
+
+
+// Start Resets
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+    font-size: 10px;
+    @include transition;
+}
+// End Resets
